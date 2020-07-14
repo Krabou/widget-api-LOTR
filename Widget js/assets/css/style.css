@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hobbit";
+}
+
+@font-face {
+    font-family: "Hobbit";
+    src: url("../police/ring/RINGM___.TTF");
+}
+
+body {
+    cursor: url(../images/anneau.cur), auto
+}
+
+/*HEADER*/
+header {
+    width: 100%;
+    overflow: hidden;
+    background: black;
+}
+
+h1 {
+    color: #f3b729;
+    font-size: 35px;
+    text-align: center;
+    padding: 2vh 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/*NAVIGATION*/
+nav {
+    width: 100%;
+    min-height: 60px;
+    background: black;
+    color: blanchedalmond;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 15px;
+}
+
+nav>div>input {
+    height: 30px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+#navig{
+    display: flex;
+    flex-direction: column;
+}
+form {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+form>label {
+    margin-right: 15px;
+}
+
+#search {
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+/*Section*/
+section {
+    min-height: 100vh;
+    padding: 5vh 5vh;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    border: 3px double #f3b729;
+    height: 50px;
+    width: 300px;
+    margin: 20px auto 30px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+ul#all {
+    list-style: none;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+ul#all>div {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 280px;
+    /* background: red; */
+    margin: 10px 10px;
+    padding: 0 5px;
+    justify-content: space-around;
+    border: 1px solid #f3b729;
+    overflow: hidden;
+}
+
+a {
+    margin: 5px auto;
+    text-decoration: none;
+}
+
+.button {
+    color: white;
+    background: black;
+    padding: 5px;
+    border: none;
+    outline: none;
+
+}
+
+.lord1 {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.button:hover {
+    color: #f3b729;
+    cursor: pointer;
+}
+
+ul#ring {
+    list-style: none;
+    margin: 15px 15px;
+}
+
+/*QUOTE*/
+/*FOOTER*/
+footer {
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+}
+
+footer>p {
+    margin: auto;
+}
+
+@media screen and (min-width:769px) {
+    nav {
+        justify-content: space-between;
+        
+    }
+    form {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
