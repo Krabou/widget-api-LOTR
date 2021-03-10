@@ -11,7 +11,7 @@
 }
 
 body {
-    cursor: url(../images/anneau.cur), auto
+    cursor: url(../img/anneau.cur), auto
 }
 
 /*HEADER*/
@@ -148,6 +148,34 @@ ul#ring {
 }
 
 /*QUOTE*/
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+    text-align: center;
+    display: none;
+}
+.popup{
+    background: rgb(250, 242, 242);
+    color: black;
+    padding: 50px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.btnClose{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  cursor: pointer;
+}
 /*FOOTER*/
 footer {
     background: black;
